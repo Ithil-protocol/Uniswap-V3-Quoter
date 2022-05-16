@@ -34,7 +34,7 @@ export function shouldPerformCorrectQuote(): void {
   });
 
   it("test with a non stable pair WBTC:USDT", async function () {
-    const amount = ethers.utils.parseUnits("10", 6);
+    const amount = ethers.utils.parseUnits("10", 8);
 
     const expectedAmountToReceive0 =
       await this.uniswap.callStatic.quoteExactInputSingle(
