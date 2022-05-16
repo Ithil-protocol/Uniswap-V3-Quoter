@@ -27,22 +27,11 @@ Here is how the algorithm works on a general level:
    ```sh
    git clone ...this repo...
    ```
-2. Install required packages both in the base and the *frontend* folder using the same command
+2. Install required packages
    ```sh
    yarn install
    ```
-3. Run a mainnet fork and deploy the smart contract
+3. Run a mainnet fork and execute the tests
    ```sh
-   yarn fork
+   yarn test
    ```
-4. Execute the demo frontend app
-   ```sh
-   cd frontend
-   yarn start
-   ```
-5. Connect with *MetaMask* browser wallet using the following network settings
-   ```
-   Chain ID: 31337
-   RPC URL: http://127.0.0.1:8545
-   ```
-   
