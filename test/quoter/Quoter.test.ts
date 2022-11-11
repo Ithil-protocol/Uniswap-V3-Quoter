@@ -4,7 +4,7 @@ import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signe
 
 import type { Quoter } from "../../src/types/Quoter";
 import { Signers } from "../types";
-import { shouldPerformCorrectQuote } from "./Quoter.behavior";
+import { shouldObservePastQuote, shouldPerformCorrectQuote } from "./Quoter.behavior";
 
 import { abi } from "@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json";
 
@@ -23,5 +23,6 @@ describe("Tests", function () {
 
   describe("Quoter Integration Tests", function () {
     shouldPerformCorrectQuote();
+    shouldObservePastQuote();
   });
 });

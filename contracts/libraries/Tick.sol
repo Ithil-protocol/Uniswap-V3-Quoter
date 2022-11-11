@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0;
 
-import './LowGasSafeMath.sol';
-import './SafeCast.sol';
+import "./LowGasSafeMath.sol";
+import "./SafeCast.sol";
 
-import './TickMath.sol';
-import './LiquidityMath.sol';
+import "./TickMath.sol";
+import "./LiquidityMath.sol";
 
 /// @title Tick
 /// @notice Contains functions for managing tick processes and relevant calculations
@@ -126,7 +126,7 @@ library Tick {
         uint128 liquidityGrossBefore = info.liquidityGross;
         uint128 liquidityGrossAfter = LiquidityMath.addDelta(liquidityGrossBefore, liquidityDelta);
 
-        require(liquidityGrossAfter <= maxLiquidity, 'LO');
+        require(liquidityGrossAfter <= maxLiquidity, "LO");
 
         flipped = (liquidityGrossAfter == 0) != (liquidityGrossBefore == 0);
 

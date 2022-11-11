@@ -1,9 +1,8 @@
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.7.6;
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity >=0.8.0 <0.9.0;
 pragma experimental ABIEncoderV2;
 
 interface IUniswapV3Quoter {
-
     struct PoolState {
         // the current price
         uint160 sqrtPriceX96;
@@ -15,10 +14,8 @@ interface IUniswapV3Quoter {
         uint24 fee;
         // the pool's liquidity
         uint128 liquidity;
-        // whether the pool is locked
-        bool unlocked;
     }
-    
+
     // accumulated protocol fees in token0/token1 units
     struct ProtocolFees {
         uint128 token0;
