@@ -21,7 +21,7 @@ Here is how the algorithm works on a general level:
 
 4. Rinse and repeat until no liquidity is left
 
-## How to use it
+## How to test it locally
 
 1. Clone the repo
    ```sh
