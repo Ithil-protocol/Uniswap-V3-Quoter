@@ -1,5 +1,5 @@
 # Uniswap V3 quoter
-A fully on-chain UniswapV3 *view* quoter.
+A fully on-chain UniswapV3 *view* quoter. Check the wiki to learn more.
 
 ## General Description
 Protocols in need of using UniswapV3 on-chain have to rely on external data sources like Chainlink in order to reliably get price data, as Uniswap oracles are currently released as "lens" functions which cost gas and are quite unfeasible for constant usage.
