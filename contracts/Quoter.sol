@@ -13,7 +13,7 @@ contract Quoter is IQuoter, UniswapV3Quoter {
 
     // This should be equal to quoteExactInputSingle(_fromToken, _toToken, _poolFee, _amount, 0)
     // todo: add price limit
-    function estimateMaxSwapUniswapV3(
+    function estimateAmountOut(
         address _fromToken,
         address _toToken,
         uint256 _amount,
@@ -27,7 +27,7 @@ contract Quoter is IQuoter, UniswapV3Quoter {
 
     // This should be equal to quoteExactOutputSingle(_fromToken, _toToken, _poolFee, _amount, 0)
     // todo: add price limit
-    function estimateMinSwapUniswapV3(
+    function estimateAmountIn(
         address _fromToken,
         address _toToken,
         uint256 _amount,

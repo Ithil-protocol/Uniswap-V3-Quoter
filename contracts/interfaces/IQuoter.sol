@@ -3,7 +3,7 @@ pragma solidity >=0.8.0 <0.9.0;
 pragma experimental ABIEncoderV2;
 
 interface IQuoter {
-    function estimateMaxSwapUniswapV3(
+    function estimateAmountOut(
         address _fromToken,
         address _toToken,
         uint256 _amount,
@@ -11,7 +11,7 @@ interface IQuoter {
         uint32 secondsAgo
     ) external view returns (uint256);
 
-    function estimateMinSwapUniswapV3(
+    function estimateAmountIn(
         address _fromToken,
         address _toToken,
         uint256 _amount,
